@@ -1,0 +1,208 @@
+{
+    "_index": "packets-2024-12-09",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.encap_type": "1",
+          "frame.time": "Dec  9, 2024 14:53:48.113522000 W. Central Africa Standard Time",
+          "frame.time_utc": "Dec  9, 2024 13:53:48.113522000 UTC",
+          "frame.time_epoch": "1733752428.113522000",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_delta": "1.005096000",
+          "frame.time_delta_displayed": "1.005096000",
+          "frame.time_relative": "519.616889000",
+          "frame.number": "215",
+          "frame.len": "446",
+          "frame.cap_len": "446",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:gnw:btpb:its",
+          "frame.coloring_rule.name": "Broadcast",
+          "frame.coloring_rule.string": "eth[0] & 1"
+        },
+        "eth": {
+          "eth.dst": "ff:ff:ff:ff:ff:ff",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "Broadcast",
+            "eth.dst.oui": "16777215",
+            "eth.dst.lg": "1",
+            "eth.dst.ig": "1",
+            "eth.addr": "ff:ff:ff:ff:ff:ff",
+            "eth.addr_resolved": "Broadcast",
+            "eth.addr.oui": "16777215",
+            "eth.lg": "1",
+            "eth.ig": "1"
+          },
+          "eth.src": "ba:be:ba:be:00:02",
+          "eth.src_tree": {
+            "eth.src_resolved": "ba:be:ba:be:00:02",
+            "eth.src.oui": "12238522",
+            "eth.src.lg": "1",
+            "eth.src.ig": "0",
+            "eth.addr": "ba:be:ba:be:00:02",
+            "eth.addr_resolved": "ba:be:ba:be:00:02",
+            "eth.addr.oui": "12238522",
+            "eth.lg": "1",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x8947",
+          "eth.stream": "0"
+        },
+        "gnw": {
+          "geonw.bh": {
+            "geonw.bh.version": "1",
+            "geonw.bh.nh": "1",
+            "geonw.bh.reserved": "0x00",
+            "geonw.bh.lt": "80",
+            "geonw.bh.lt_tree": {
+              "geonw.bh.lt.mult": "20",
+              "geonw.bh.lt.base": "0"
+            },
+            "geonw.bh.rhl": "1"
+          },
+          "geonw.ch": {
+            "geonw.ch.nh": "2",
+            "geonw.ch.reserved1": "0x00",
+            "geonw.ch.htype": "0x50",
+            "geonw.ch.tclass": "0",
+            "geonw.ch.tclass_tree": {
+              "geonw.ch.tc.buffer": "0",
+              "geonw.ch.tc.offload": "0",
+              "geonw.ch.tc.id": "0"
+            },
+            "geonw.ch.flags": {
+              "geonw.ch.flags.mob": "1",
+              "geonw.ch.flags.reserved": "0"
+            },
+            "geonw.ch.plength": "392",
+            "geonw.ch.mhl": "1",
+            "geonw.ch.reserved2": "0x00"
+          },
+          "geonw.tsb": {
+            "geonw.src_pos": "14:00:ba:be:ba:be:00:02:dc:f7:f1:d9:1d:59:ac:93:02:6c:10:66:80:00:00:00",
+            "geonw.src_pos_tree": {
+              "geonw.src_pos.addr": "14:00:ba:be:ba:be:00:02",
+              "geonw.src_pos.addr_tree": {
+                "geonw.src_pos.addr.manual": "0",
+                "geonw.src_pos.addr.type": "5",
+                "geonw.src_pos.addr.country": "0",
+                "geonw.src_pos.addr.mid": "ba:be:ba:be:00:02"
+              },
+              "geonw.src_pos.tst": "3707236825",
+              "geonw.src_pos.lat": "492416147",
+              "geonw.src_pos.long": "40636518",
+              "geonw.src_pos.pai": "1",
+              "geonw.src_pos.speed": "0",
+              "geonw.src_pos.hdg": "0"
+            },
+            "geonw.shb.reserved": "0"
+          }
+        },
+        "btpb": {
+          "btpb.dstport": "2001",
+          "btpb.dstportinf": "0x0000"
+        },
+        "its": {
+          "its.ItsPduHeader_element": {
+            "its.protocolVersion": "2",
+            "its.messageId": "2",
+            "its.stationId": "2"
+          },
+          "cam.CamPayload_element": {
+            "cam.generationDeltaTime": "61912",
+            "cam.camParameters_element": {
+              "per.extension_bit": "0",
+              "per.optional_field_bit": "1",
+              "per.optional_field_bit": "0",
+              "cam.basicContainer_element": {
+                "per.extension_bit": "0",
+                "its.stationType": "5",
+                "its.referencePosition_element": {
+                  "its.latitude": "492416147",
+                  "its.longitude": "40636518",
+                  "its.positionConfidenceEllipse_element": {
+                    "its.semiMajorAxisLength": "1",
+                    "its.semiMinorAxisLength": "2",
+                    "its.semiMajorAxisOrientation": "3"
+                  },
+                  "its.altitude_element": {
+                    "its.altitudeValue": "3",
+                    "per.enum_index": "0",
+                    "its.altitudeConfidence": "0"
+                  }
+                }
+              },
+              "per.extension_bit": "0",
+              "per.choice_index": "0",
+              "cam.highFrequencyContainer": "0",
+              "cam.highFrequencyContainer_tree": {
+                "cam.basicVehicleContainerHighFrequency_element": {
+                  "per.optional_field_bit": "0",
+                  "per.optional_field_bit": "0",
+                  "per.optional_field_bit": "0",
+                  "per.optional_field_bit": "0",
+                  "per.optional_field_bit": "0",
+                  "per.optional_field_bit": "0",
+                  "per.optional_field_bit": "0",
+                  "cam.heading_element": {
+                    "its.headingValue": "1",
+                    "its.headingConfidence": "2"
+                  },
+                  "cam.speed_element": {
+                    "its.speedValue": "1",
+                    "its.speedConfidence": "2"
+                  },
+                  "per.enum_index": "1",
+                  "cam.driveDirection": "1",
+                  "cam.vehicleLength_element": {
+                    "its.vehicleLengthValue": "25",
+                    "per.enum_index": "0",
+                    "its.vehicleLengthConfidenceIndication": "0"
+                  },
+                  "cam.vehicleWidth": "18",
+                  "cam.longitudinalAcceleration_element": {
+                    "its.value": "0",
+                    "its.confidence": "0"
+                  },
+                  "cam.curvature_element": {
+                    "its.curvatureValue": "1",
+                    "per.enum_index": "2",
+                    "its.curvatureConfidence": "2"
+                  },
+                  "per.extension_present_bit": "0",
+                  "per.enum_index": "2",
+                  "cam.curvatureCalculationMode": "2",
+                  "cam.yawRate_element": {
+                    "its.yawRateValue": "1",
+                    "per.enum_index": "2",
+                    "its.yawRateConfidence": "2"
+                  }
+                }
+              },
+              "per.extension_bit": "0",
+              "cam.lowFrequencyContainer": "0",
+              "cam.lowFrequencyContainer_tree": {
+                "cam.basicVehicleContainerLowFrequency_element": {
+                  "per.enum_index": "0",
+                  "cam.vehicleRole": "0",
+                  "cam.exteriorLights": "aa",
+                  "cam.exteriorLights_tree": {
+                    "its.ExteriorLights.lowBeamHeadlightsOn": "1",
+                    "its.ExteriorLights.highBeamHeadlightsOn": "0",
+                    "its.ExteriorLights.leftTurnSignalOn": "1",
+                    "its.ExteriorLights.rightTurnSignalOn": "0",
+                    "its.ExteriorLights.daytimeRunningLightsOn": "1",
+                    "its.ExteriorLights.reverseLightOn": "0",
+                    "its.ExteriorLights.fogLightOn": "1",
+                    "its.ExteriorLights.parkingLightsOn": "0"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+}
